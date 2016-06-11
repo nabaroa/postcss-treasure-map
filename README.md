@@ -1,9 +1,6 @@
-# I've seen things
-## Slides on awesome CSS features
+# PostCSS. The treasure map
+##Slides for the WordCampBilbao (11-06-2016)
 
-![alt tag](http://naknak.me/IveSeenThings/assets/home.jpg)
+![alt tag](http://naknak.me/assets/postcss.jpg)
  
-* Grid layout
-* CSS extensions
-* CSS modules
-* PostCSS. Is Sass dead?
+

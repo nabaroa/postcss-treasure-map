@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>I've seen things</title>
-    <meta name="description" content="CSS awesome features">
+    <title>PostCSS. The treasure map</title>
+    <meta name="description" content="Slides on postCSS">
     <meta name="author" content="Naiara Abaroa">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -31,7 +31,7 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <section class="home" data-background="assets/home.jpg" data-background-position="top left">
+                <section class="home" data-background="assets/cover.jpg" data-background-position="top left">
                 </section>
                 <section>
                     <div class="flex center ">
@@ -41,373 +41,535 @@
                         </div>
                         <div>
                             <p><span class="icon-heart color "></span> CSS</p>
-                            <img class="circle  " src="assets/nak_square.jpg" alt="Naiara Abaroa" width="200">
+                            <img class="circle  " src="assets/naiara_abaroa.jpg" alt="Naiara Abaroa" width="200">
                             <p>
                                 <img src="assets/n.svg" alt="">
                             </p>
                         </div>
                         <div>
-                            <p><span class=" bold">UI designer/developer</span> at <a class="bold" href="http://wimi5.com" target="_blank">WiMi5</a></p>
+                            <p><span class=" bold">UI designer/CSS lover</span> at <a class="bold" href="http://wimi5.com" target="_blank">WiMi5</a></p>
                             <p>
                                 <a href="https://twitter.com/nabaroa" target="_blank">@nabaroa</a> <a href="http://naknak.me" target="_blank">naknak.me</a>
                             </p>
                         </div>
                     </div>
                 </section>
-                <section >
-                    <h1 >Touch the future </h1>
-                    <h1 ><span class="color bold">play</span> with it</h1>
-                </section>
                 <section>
+                    <h1><span class="bold color">Touch</span> the future <br> & <br>
+                   <span class="color bold">play</span> with it</h1>
+                </section>
+                <section data-background="assets/fear.jpg" data-background-position="center center">
+                    <h1 class="white text-shadow"><span class="bold color ">Feel the fear</span><br> and <br><span class="bold color">do it</span><br> anyway</h1>
+                </section>
+                <!--        <section>
                     <h1>Are you a <span class="color bold">pioneer</span>?</h1>
                     <h2>You'll <span class="color bold">enjoy </span>;)</h2>
-                </section>
+                </section> -->
             </section>
-          
             <!-- Example of nested vertical slides -->
             <section>
                 <section>
-                    <h1><span class="text color huge bold block">1</span> <span class=" bold">Grid</span> layout</h1>
-                    <a class="icon-source" href="https://www.w3.org/TR/css-grid-1/" target="_blank"></a>
+                    <h1><span class="text color  bold ">What</span> is <span class="bold">PostCSS?</span> <br> </h1>
+                    <a class="icon-source" href="http://postcss.org/" target="_blank"></a>
                 </section>
-                <!--          <section>
+                <section>
+                    <h1>A <span class="color bold">tool for transforming CSS</span> with JavaScript</h1></section>
+                <section>
+                    <h1>Based on <span class="bold color">plugins</span></h1>
+                    <h2>Build you own environment</h2>
+                    <a href="http://postcss.parts/" class="icon-source" target="_blank"></a>
+                    <p>Currently, PostCSS has <span class="bold color">more than 200 plugins</span></p>
+                </section>
+                <section>
+                    <h1>Origin</h1>
+                </section>
+                <section>
+                    <h1>Autoprefixer</h1>
                     <ul>
-                        <li>CSS Grid Layout lets you define rows and columns for your layout</li>
-                        <li>Grids can adapt to make use of available space</li>
-                        <li>Content order can be independent from grid container display order</li>
-                        <li>Layouts can change based on media queries, making responsive design easier</li>
-                        <li>Content can overlap (enabling layout that’s impossible with other methods)</li>
-                        <li>Grid Layout is fast</li>
+                        <li>The <span class="bold color">first, the best known</span> and <span class="bold color">most widely used</span> plugin</li>
                     </ul>
-                </section> -->
-                <section>
-                    <h1>Grid <span class="color bold">Terminology</span></h1>
-                    <div class="container">
-                        <div><span>Grid <span class="color bold">Lines</span></span> <img src="assets/grid-lines.svg" alt=""></div>
-                        <div><span>Grid <span class="color bold">Track</span></span> <img src="assets/grid-track.svg" alt=""></div>
-                    </div>
-                    <div class="container">
-                        <div><span>Grid <span class="color bold">Cell</span></span><img src="assets/grid-cell.svg" alt=""></div>
-                        <div><span>Grid <span class="color bold">Area</span></span><img src="assets/grid-area.svg" alt=""></div>
-                    </div>
-                </section>
-                <section class="shrink">
-                    <h1>Grid <span class="bold color">lines</span></h1>
-                    <p class="small">The grid lines are the ones <span class="bold color">dividing horizontally and vertically a grid</span>. And they’re actually numbered, starting at 1.</p>
-                    <img src="assets/example-grid-lines.svg" alt="Numbered grid lines example" class="img-responsive">
-                    <pre><code>
-.grid{
-    display: grid; 
-    grid-template-columns: 300px 200px 100px; 
-    grid-template-rows: 100px 50px;
-}</code>
-</pre>
-                </section>
-                <section>
-                    <h1>Grid <span class="bold color">placement properties</span></h1>
-                    <dl>
-                        <dt>grid-column:</dt>
-                        <dd>Shorthand for <span class="color">grid-column-start</span> and <span class="color">grid-column-end</span> properties.</dd>
-                        <dt>grid-row: </dt>
-                        <dd>Shorthand for <span class="color">grid-row-start</span> and <span class="color">grid-row-end</span> properties.</dd>
-                        <dt> grid-area:</dt>
-                        <dd>Shorthand to set the 4 placement properties in just one declaration.</dd>
-                    </dl>
-                </section>
-                <section>
-                    <img src="assets/example-grid-lines-item.svg" alt="Place item using line numbers example" class="img-responsive">
-                    <div class="container half">
-                        <div>
-                            <p>The long way:</p>
-                            <pre><code class="css">
-.item{
-    grid-column-start: 2; 
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end 2;
-}
-                    
-                      </code></pre>
-                        </div>
-                        <div>
-                            <p>Easier with shorthands:</p>
-                            <pre><code>
-.item{ 
-    grid-column: 2 / 4; 
-    grid-row: 1 / 2; 
-}                                           
-                        </code></pre>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h1>Cell <span class="bold color">spanning</span></h1>
-                    <p>The same position using span.</p>
-                    <img src="assets/example-grid-lines-item-span.svg" alt="Place item using span example" class="img-responsive">
-                    <pre><code>
-.item{
-    grid-column: 2 / span 2; 
-    grid-row: 1;
-}
-                      
-                    </code></pre>
-                </section>
-                <section>
-                    <h1><span class="bold color">Negative</span> line numbers</h1>
-                    <p>Negative numbers allow you to <span class="bold color">reference the lines starting from the end</span> of the grid. It's like a <span class="bold color">reverse</span>.</p>
-                    <img src="assets/example-grid-lines-item-negative.svg" alt="Place item using negative line numbers example" class="img-responsive">
-                    <!--            <pre><code class="css">
-.item{
-    grid-column: -3 / -1; 
-    grid-row: -3 / -2;
-}
-                    </code></pre> -->
-                    <p class="small">Useful if you want to be sure that the item is in the last column, independently of the number of tracks, you’ll just need to set: <span class="bold color">grid-column-end: -1;</span></p>
-                </section>
-                <section>
-                    <h1><span class="bold color">Named</span> grid lines</h1>
-                    <p>You can <span class="bold color">name the grid lines</span>, so you don’t need to remember the specific number to reference to them.</p>
-                    <img src="assets/example-grid-lines-item-named.svg" alt="Place item using line names example" class="img-responsive">
-                    <pre><code class="css">
-.item{
-    display: grid;
-    grid-template-columns: [start] 300px [main] 200px [aside] 100px [end];
-    grid-template-rows: [top] 100px [middle] 50px [bottom];
-}
-                    </code></pre>
-                </section>
-                <section>
-                    <p><span class="bold color">One line can have several names</span>, you just need to set them in the definition: </p>
-                    <pre><code class="css">
-.grid{
-    grid-template-rows: [top start] 100px [middle center] 50px [bottom end];
-}
-                    </code></pre>
-                </section>
-                <section class="shrink">
-                    <p>The names of the lines <span class="bold color"> can be repeated</span>. To reference them you’ve to use a number that can be again positive or negative. </p>
-                    <img src="assets/example-named-grid-lines-items.svg" alt="Place items with repeated named grid lines example" class="img-responsive">
-                    <div class="container half">
-                        <pre><code class="css">
-.grid{
-  display: grid;
-  grid-template-columns: [col] 200px [gap] 50px 
-  [col] 200px [gap] 50px [col] 200px [gap];
-}
-                              </code></pre>
-                        <pre><code class="css"> 
-.item1{ grid-column: col 2;}
-.item2{ grid-column: col 1 / gap 2;}
-.item3{ grid-column: col -1;}
-                              </code></pre>
-                    </div>
-                </section>
-                <section>
-                    <p>And of course, <span class="color bold">you can span to a named grid line</span>.</p>
-                    <img src="assets/example-named-grid-lines-item-span.svg" alt="Place item spanning to named grid line example" class="img-responsive">
-                    <pre><code class="css">
-.item{
-    grid-column: col 2 / span 2 gap;
-}
-                        </code></pre>
-                </section>
-                <section>
-                    <h1>Grid <span class="bold color">areas</span></h1>
-                    <p class="">You can define grid areas and place items directly on them. You have to use the <span class="bold color">grid-template-areas</span> property to put names to the different areas in your grid. And you could use the <span class="bold color">grid-area</span> shorthand directly to place the items.</p>
-                </section>
-                <section>
-                    <!-- <h1>Grid <span class="bold color">areas</span></h1> -->
-                    <img src="assets/example-grid-areas.svg" alt="Place items inside grid areas example" class="third height center-block img-responsive">
-                    <div class="container half smaller">
-                        <pre><code class="css">
-            
-.grid{
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-areas:
-    'title title title title aside'
-    'nav main main main aside'
-    'nav main main main aside'
-    'footer footer footer footer footer';
-}
-        </code></pre>
-                        <pre><code class="css">
-.item1{grid-area: title;}
-.item2{grid-area: nav;}
-.item3{grid-area: main;}
-.item4{grid-area: aside;}
-.item5{grid-area: footer;}
-        </code></pre>
-                    </div>
-                </section>
-                <section>
-                    <h1><span class="bold color">Implicit</span> names</h1>
-                    <p>Grid areas <span class="color bold">create implicit names</span> for the grid lines surrounding them. These implicit names use the <span class="color bold">“-start”</span> and <span class="color bold">“-end” suffixes</span>. </p>
-                    <p>E.g. the “title” area creates <span class="bold color">4 implicit</span> names for the lines (2 in each axis):
-                        <ul>
-                            <li>Left line: “title-start”</li>
-                            <li>Right line: “title-end”</li>
-                            <li>Top line: “title-start”</li>
-                            <li>Bottom line: “title-end”</li>
-                        </ul>
+                    <p>It is <a href="https://developers.google.com/web/tools/setup/setup-buildtools#dont-trip-up-with-vendor-prefixes" target="_blank">recommended by Google </a>and used in Twitter.</p>
+                    <p>
+                        <a class="icon-source" href="https://github.com/postcss/autoprefixer" target="_blank"></a>
                     </p>
-                    <p class="comment">And you can reference those lines when placing an item, instead of using the whole area.</p>
                 </section>
                 <section>
-                    <div class="container">
-                        <img src="assets/example-grid-areas.svg" alt="Place items inside grid areas example" class="half width center-block img-responsive">
-                        <img src="assets/example-grid-areas-lines.svg" alt="Place item using implicit names from grid areas example" class="half width center-block img-responsive">
-                    </div>
+                    <h1>Author</h1>
+                    <h2><span class="bold color">Andrey Sitnik</span> <a href="https://twitter.com/andreysitnik" target="_blank">@andreysitnik</a></h2>
+                    <img class="circle black-white" src="https://pbs.twimg.com/profile_images/488954932058263552/04mUNBbo.jpeg" alt="" width="200">
+                    <blockquote>Someone asked Andrey: why did you create PostCSS?
+                        <br> Because I sent a pull request to compass CSS and they didn't answered me</blockquote>
                 </section>
                 <section>
-                    <h1><span class="color bold">Implicit</span> grid</h1>
-                    <p> It's possible to <span class="color bold">place items outside</span> of the explicit grid, creating implicit tracks automatically. The size of these tracks is controlled by <span class="color bold">grid-auto-columns</span> and <span class="color bold">grid-auto-rows</span> properties.</p>
-                    <img src="assets/example-implicit-grid.svg" alt="Implicit grid example" class="img-responsive">
-                    <div class="container">
-                        <pre><code class="css">
-.grid{
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-auto-columns: 100px;
-}
-                        </code></pre>
-                        <pre><code class="css">
-.item{
-    grid-column:5;
-}
-                        </code></pre>
-                    </div>
+                    <h1>Current <span class="bold color">status</span></h1>
                 </section>
                 <section>
-                    A coupe of examples:
-                    <pre><code class="css">
-.grid{
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-auto-columns: 100px;
-}
-                        </code></pre>
-                    <div class="container  align-items-center">
-                        <pre><code class="css">
-.item{
-    grid-column:2 / span 3;
-}
-                            </code></pre>
-                        <img src="assets/example-implicit-grid-span.svg" alt="Implicit grid with span example" class="half width img-responsive">
-                    </div>
-                    <div class="container align-items-center">
-                        <pre><code class="css">
-.item{
-    grid-column:-5;
-}
-                            </code></pre>
-                        <img src="assets/example-implicit-grid-before.svg" alt="Implicit grid before explicit example" class="half width img-responsive">
-                    </div>
+                    <h1>npm-stat.com</h1>
+                    <p>Total number of <span class="bold color">downloads</span> between Jun 06 2015 and Jun 05 2016: <span class="bold color">17.428.020</span></p>
+                    <img src="assets/current-status.svg" alt="">
+                    <a class="icon-source" href="http://npm-stat.com/charts.html?package=postcss" target="_blank"></a>
                 </section>
                 <section>
-                    <p>There's more about Implicit grid & Named grid lines, and special cases...</p>
-                    <h1>But for 5 min <span class="bold color">is enough</span>!</h1>
-                </section>
-                <section>
-                    <h1>the <spna class="color bold">fr</spna> Unit</h1>
-                    <h2>The new kid on the block</h2>
-                    <p>The fr unit can be used for grid-rows and grid-columns values. It stands for <span class="color bold">"fraction of available space"</span>. Think of it as percentages for available space when you've taken off fixed-sized and content-based columns/rows. As the spec says:</p>
-                    <p>The distribution of fractional space occurs after all 'length' or content-based row and column sizes have reached their maximum.</p>
-                </section>
-                <section>
-                    <h1>
-                    The <span class="bold color">repeat()</span>  function
-                </h1>
-                    <p>It allows you to <span class="bold color">define a pattern </span>repeated X times. </p>
-                    <p> Let's say you want to do 12 equal-width columns spaced from each other by a 1% margin: </p>
-                    <pre><code class="css">
-grid-template-column:1fr repeat(11, 1% 1fr);
-</code></pre>
-                    <p>It is the same as:</p>
-                    <pre><code class="css">
-grid-template-column:1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr;
-</code></pre>
-                </section>
-                <section>
-                    <p>The specification is <span class="bold color">really flexible</span> regarding how to place items on the grid.</p>
-                    <h1><span class="bold color">Choose</span> your favourite way</h1>
-                </section>
-                <section>
-                    <h1>Can I<span class="bold color">use</span>?</h1>
-                    <iframe width="100%" class="half height" src="http://caniuse.com/#feat=css-grid" frameborder="0"></iframe>
-                </section>
-                <!--  <section>
-                    <h1>Browser support</h1> <a href="http://gridbyexample.com/browsers/" target="_blank">http://gridbyexample.com/browsers/</a>
-                </section> -->
-                <!--       <section>
-                    <h1>Any <span class="bold color">prevision</span>?</h1>
-             
-                </section> -->
-                <section>
-                    <h1><span class="bold color">Enable</span> CSS Grid Layout</h1>
-                    <div class="container small tal">
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/chrome.png" alt="Chrome logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="https://www.google.com/intl/en/chrome/browser/">Chrome</a></h3>
-                                <p>Enable the flag called <strong class="color">Enable experimental Web Platform features</strong> going to:
-                                    <br><a target="_blank" href="chrome://flags/#enable-experimental-web-platform-features">chrome://flags/#enable-experimental-web-platform-features</a></p>
-                            </div>
-                        </div>
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/firefox.png" alt="Firefox logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="https://mozilla.org/firefox">Firefox</a></h3>
-                                <p>Enable the flag called <strong class="color">layout.css.grid.enabled</strong> going to:
-                                    <br><a target="_blank" href="about:config">about:config</a></p>
-                            </div>
-                        </div>
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/internet-explorer.png" alt="Internet Explorer logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">IE</a></h3>
-                                <p>Enabled by default since IE10 (old syntax).</p>
-                                <p><span class="color bold">Prefixed</span> <code>-ms</code></p>
-                            </div>
-                        </div>
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/opera.png" alt="Opera logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="http://www.opera.com/">Opera</a></h3>
-                                <p>Enable the flag called <strong class="color">Enable experimental Web Platform features</strong> going to:
-                                    <br><a target="_blank" href="opera://flags/#enable-experimental-web-platform-features">opera://flags/#enable-experimental-web-platform-features</a></p>
-                            </div>
-                        </div>
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/webkit.png" alt="WebKit logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="http://nightly.webkit.org/">WebKit</a></h3>
-                                <p>Enabled by default in WebKit Nightly Builds.</p>
-                                <p><span class="color bold">Prefixed</span> <code>-webkit</code></p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="comment">Check the <a target="_blank" href="https://github.com/FremyCompany/css-grid-polyfill">CSS Grid Layout polyfill by François Remy</a>.</p>
-                </section>
-                <section>
-                    <h1>Example in use</h1>
-                    <a href="exercises/grid_layout.html" class="icon-source" target="_blank"></a>
-                </section>
-                <section>
-                    <h1>Doc.</h1>
+                    <h1>Benefits</h1>
                     <ul>
-                        <li><a target="_blank" href="https://www.w3.org/TR/css-grid-1/">https://www.w3.org/TR/css-grid-1/</a></li>
-                        <li><a target="_blank" href="http://blogs.igalia.com/mrego/2016/02/01/deep-dive-into-grid-layout-placement/">http://blogs.igalia.com/mrego/2016/02/01/deep-dive-into-grid-layout-placement/</a></li>
-                        <li><a target="_blank" href="http://gridbyexample.com/">http://gridbyexample.com/</a></li>
-                        <li><a target="_blank" href="https://abookapart.com/products/get-ready-for-css-grid-layout">https://abookapart.com/products/get-ready-for-css-grid-layout</a></li>
-                        <li><a href="http://igalia.github.io" target="_blank">http://igalia.github.io</a></li>
+                        <li>Regular CSS</li>
+                        <li>Versatility</li>
+                        <li>Modularity</li>
+                        <li>Speed</li>
+                        <li>DIY</li>
+                        <li>Used in common dev. enviroments</li>
                     </ul>
+                </section>
+                <section>
+                    <h1>Regular CSS</h1>
+                    <ul>
+                        <li>Back to the roots & the <span class="bold color">specification</span></li>
+                        <li>It does<span class="bold color"> not require a specific syntax</span></li>
+                        <li>It does <span class="bold color">not block the code</span> (Sass, Less)</li>
+                        <li>It is <span class="bold color">not necesary to translate</span> the code to other languajes </li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Versatility</h1>
+                    <h2>Currently, PostCSS has <br> <span class="bold color">more than 200 plugins</span></h2>
+                    <blockquote>If you can imagin, you can do it</blockquote>
+                    <a class="icon-source" href="http://postcss.parts/" target="_blank"></a>
+                </section>
+                <section>
+                    <h1>Modularity</h1>
+                    <h2>Use <span class="bold color">only what you need</span></h2>
+                    <h2><span class="bold color">Each</span> plugin for <span class="bold color">each</span> task</h2>
+                    <p>*But there are also plugin <span class="bold color">packages</span></p>
+                </section>
+                <section>
+                    <h1>Speed</h1>
+                    <h2>It's <span class="bold color">3 times faster</span></h2>
+                    <h3>PostCSS Benchmarks: Preprocessors</h3>
+                    <p>Compare CSS processors for parsings, nested rules, mixins, variables and math:</p>
+                    <pre><code>
+PostCSS:   39 ms
+Rework:    73 ms   (1.9 times slower)
+libsass:   77 ms   (1.9 times slower)
+Less:      179 ms  (4.5 times slower)
+Stylus:    269 ms  (6.8 times slower)
+Stylecow:  271 ms  (6.9 times slower)
+Ruby Sass: 1101 ms (28.0 times slower)
+        </code></pre>
+                    <p>
+                        <a class="icon-source" href="https://github.com/postcss/benchmark " target="_blank"></a>
+                    </p>
+                </section>
+                <section>
+                    <h1>DIY</h1>
+                    <h3>You don’t need special permission to make a PostCSS plugin; if you want to make one, <br>you just<span class="bold color"> go right ahead and make it</span>.</h3>
+                    <a class="icon-source" href="http://webdesign.tutsplus.com/tutorials/postcss-deep-dive-create-your-own-plugin--cms-24605" target="_blank"></a>
                 </section>
             </section>
+            <!-- nak -->
             <section>
                 <section>
-                    <h1><span class="text color huge bold block">2</span> <span class=" bold">Custom</span> properties</h1>
+                    <h1><span class="text color  bold ">Instalation</span></h1>
+                    <a class="icon-source" href="" target="_blank"></a>
+                </section>
+                <section>
+                    <h1>Used in <span class="bold color">common dev. enviroments</span></h1>
+                    <ul>
+                        <li>Gulp</li>
+                        <li>Grunt</li>
+                        <li>npm</li>
+                        <li>Codepen</li>
+                        <li>Prepros</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Install <span class="bold color">postCSS</span></h1>
+                    <pre><code>npm install gulp-postcss --save-dev </code></pre>
+                </section>
+                <section>
+                    <h1>Install the <span class="color bold">selected plugins</span></h1>
+                    <pre><code>
+                    npm install postcss-import --save-dev
+                    npm install cssnext --save-dev
+                    npm install postcss-nested --save-dev
+                    npm install postcss-mixins --save-dev
+                            </code></pre>
+                </section>
+                <section>
+                    <h1>gulpfile.com</h1>
+                    <pre><code>
+var gulp = require('gulp');
+var postcss = require('gulp-postcss');
+var import = require('postcss-import');
+var cssnext = require('cssnext');
+var mixins = require('postcss-mixins');
+var nested = require('postcss-nested');
+
+gulp.task('css', function() {
+    var processors = [
+        import,
+        cssnext,
+        mixins,
+        nested
+    ];
+    return gulp.src('./src/*.css')
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./dest'));
+});
+
+gulp.task('watch', function() {
+    gulp.watch('src/**/*.css', ['css']);
+});
+        </code></pre>
+                </section>
+            </section>
+            <!-- nak -->
+            <section>
+                <section>
+                    <h1>Great <span class="bold color">Plugins</span></h1>
+                </section>
+                <section>
+                    <div> <img src="http://postcss.org/_/web_modules/InANutshell/autoprefixer.svg" alt="">
+                        <h3>Autoprefixer</h3>
+                        <p><span class="bold color">Add vendor prefixes</span> to CSS rules using values from Can I Use.</p>
+                        <a href="https://github.com/postcss/autoprefixer" target="_blank" class="icon-source"></a>
+                        <pre><code class="css">
+<!-- Input -->
+:fullscreen a {
+    display: flex
+}
+<!-- output -->
+:-webkit-full-screen a {
+    display: -webkit-box;
+    display: flex
+}
+:-moz-full-screen a {
+    display: flex
+}
+:-ms-fullscreen a {
+    display: -ms-flexbox;
+    display: flex
+}
+:fullscreen a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+                            </code></pre>
+                    </div>
+                </section>
+                <section>
+                    <img src="https://camo.githubusercontent.com/d6a7cde211b2bcbfd7099c127eda99b75dd65a3e/68747470733a2f2f7261776769742e636f6d2f62656e2d65622f6373736e616e6f2f6d61737465722f6d656469612f6c6f676f2e737667" width="150" alt="">
+                    <h1>CSS nano</h1>
+                    <p><span class="bold color">Compresses</span> your css</p>
+                    <pre><code>
+@charset "utf-8";h1:before{margin:10px 20px;color:red;border-radius:16px;font-weight:normal;background-position:100% 100%}
+                    </code></pre>
+                    <a href="http://cssnano.co/" target="_blank" class="icon-source"></a>
+                </section>
+                <section>
+                    <div>
+                        <img src="http://postcss.org/_/web_modules/InANutshell/css-modules.svg" width="150" alt="">
+                        <h3>CSS Modules</h3>
+                        <p>Work CSS like <span class="bold color">independent components</span></p>
+                        <a href="https://github.com/css-modules/css-modules" target="_blank" class="icon-source"></a>
+<div class="flex">
+    <pre><code class="css">
+    <!-- input -->                                
+    .name {
+        color: gray;
+    }
+    
+        </code></pre>
+        <pre><code>
+    <!-- output -->
+    .Logo__name__SVK0g {
+        color: gray;
+    }
+        </code></pre>
+</div>
+                    </div>
+                </section>
+                <section>
+                    <h1>postcss-import</h1>
+                    <p>PostCSS plugin to inline <span class="bold color">@import</span> rules content</p>
+                    <pre><code>
+@import "helpers/var.css";
+                   </code></pre>
+                    <a href="https://github.com/postcss/postcss-import" target="_blank" class="icon-source"></a>
+                </section>
+                <section>
+                    <h1>Nested</h1>
+                    <p>PostCSS plugin to <span class="color bold">unwrap nested rules</span> like how <span class="color bold">Sass</span> does it.</p>
+                    <div class="flex">
+                        <pre><code>
+    .phone {
+        &_title {
+            width: 500px;
+            @media (max-width: 500px) {
+                width: auto;
+            }
+            body.is_dark & {
+                color: white;
+            }
+        }
+        img {
+            display: block;
+        }
+    }
+            </code></pre>
+                        <pre><code>
+    .phone_title {
+        width: 500px;
+    }
+    @media (max-width: 500px) {
+        .phone_title {
+            width: auto;
+        }
+    }
+    body.is_dark .phone_title {
+        color: white;
+    }
+    .phone img {
+        display: block;
+    }
+            </code></pre>
+                    </div>
+                    <a href="https://github.com/postcss/postcss-nested" target="_blank" class="icon-source"></a>
+                </section>
+                <section>
+                    <h1>postcss-mixins</h1>
+                    <p>PostCSS plugin for <span class="bold color">mixins</span></p>
+                    <div class="flex">
+                        <pre><code>
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+        @mixin-content;
+    }
+    .icon.is-$(network):hover {
+        color: white;
+        background: $color;
+    }
+}
+
+@mixin icon twitter {
+    background: url(twt.png);
+}
+@mixin icon youtube, red {
+    background: url(youtube.png);
+}
+            
+            </code></pre>
+                        <pre><code>
+.icon.is-twitter {
+    color: blue;
+    background: url(twt.png);
+}
+.icon.is-twitter:hover {
+    color: white;
+    background: blue;
+}
+.icon.is-youtube {
+    color: red;
+    background: url(youtube.png);
+}
+.icon.is-youtube:hover {
+    color: white;
+    background: red;
+}
+                
+            </code></pre>
+                    </div>
+                    <a href="https://github.com/postcss/postcss-mixins" target="_blank" class="icon-source"></a>
+                </section>
+                <section>
+                    <h1>postcss-sorting</h1>
+                    <p>PostCSS plugin to <span class="bold color">sort rules</span> content with <span class="bold color">specified order</span>.</p>
+                    <p><span class="color bold">Declarations</span>. Example: { "sort-order": [ "margin", "padding" ] }</p>
+                    <div class="flex">
+                        <pre><code>
+/* before */
+p {
+    padding: 0;
+    margin: 0;
+}
+                      </code></pre><pre><code>
+/* after */
+p {
+    margin: 0;
+    padding: 0;
+}                        
+                      </code></pre>
+                    </div>
+                    <p><span class="color bold">Grouping</span>. Example: { "sort-order": [ [ "margin", "padding" ], [ "border", "background" ] ] }</p>
+                    <div class="flex">
+                        <pre><code>
+/* before */
+p {
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+                      </code></pre><pre><code>
+/* after */
+p {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background: none;
+}                       
+                      </code></pre>
+                    </div>
+                    <a href="https://github.com/hudochenkov/postcss-sorting" target="_blank" class="icon-source"></a>
+                </section>
+                <section>
+                    <h1>stylelint</h1>
+                    <p>A mighty, modern CSS linter that helps you enforce consistent conventions and avoid errors in your stylesheets.</p>
+                    <img src="https://github.com/stylelint/stylelint/raw/master/example.png?raw=true" alt="">
+                    <a href="http://stylelint.io/" target="_blank" class="icon-source"></a>
+                </section>
+                <section>
+                    <h1>> 200</h1>
+                    <ul>
+                        <li><span class="color bold">postcss-focus</span>: add :focus selector to every :hover for keyboard accessibility
+                            <a href="https://github.com/postcss/postcss-focus" target="_blank" class="icon-source"></a>
+                        </li>
+                        <li><span class="color bold">postcss-extract-value</span>: extract values from css properties and put them into variables.
+                            <a href="https://github.com/lutien/postcss-extract-value" target="_blank" class="icon-source"></a>
+                        </li>
+                        <li><span class="color bold">postcss-devtools</span>: Log execution time for each plugin in a PostCSS instance.
+                            <a href="https://github.com/postcss/postcss-devtools" target="_blank" class="icon-source"></a>
+                        </li>
+                        <li><span class="color bold">postcss-critical-split</span>: takes existing CSS files and splits out the annotated critical styles into a seperate file.
+                            <a href="https://www.npmjs.com/package/postcss-critical-split" target="_blank" class="icon-source"></a>
+                        </li>
+                        <li>...</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Plugin <span class="color bold">packages</span></h1>
+                </section>
+                <section>
+                    <div>
+                        <img src="http://postcss.org/_/web_modules/InANutshell/cssnext.svg" alt="">
+                        <h3>cssnext</h3>
+                        <p>Use the latest CSS syntax today with cssnext</p>
+                        <pre><code class="css">
+<!-- Input -->
+:root { 
+    --red: #d33;
+}
+a { 
+    &:hover {
+        color: color(var(--red) a(54%));
+    }
+}
+<!-- Output -->
+a:hover { 
+    color: #dd3333;
+    color: rgba(221, 51, 51, 0.54);
+}
+                            </code></pre>
+                        <a href="http://cssnext.io/" target="_blank" class="icon-source"></a>
+                    </div>
+                </section>
+                <section>
+                <h1>Features</h1>
+                 <div class="flex">
+                        <ul >
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#automatic-vendor-prefixes">automatic vendor prefixes</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#custom-properties-var">custom properties &amp; <code>var()</code></a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#reduced-calc">reduced <code>calc()</code></a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#custom-media-queries">custom media queries</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#media-queries-ranges">media queries ranges</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#custom-selectors">custom selectors</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#nesting">nesting</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#color-function"><code>color()</code> function</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#hwb-function"><code>hwb()</code> function</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#gray-function"><code>gray()</code> function</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#rrggbbaa-colors"><code>#rrggbbaa</code> colors</a> </li>
+                         </ul>  <ul>  <li >
+                             <a target="_blank"href="http://cssnext.io/features/#rgba-function-rgb-fallback"><code>rgba</code> function <small class="cssnext-FeaturesList-small">
+                                 (<code>rgb</code> fallback)
+                               </small>
+                             </a>
+                           </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#rebeccapurple-color"><code>rebeccapurple</code> color</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#font-variant-property"><code>font-variant</code> property</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#filter-property"><code>filter</code> property</a> <small class="cssnext-FeaturesList-small">
+                               (svg fallback)
+                             </small>
+                           </li> 
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#initial-value"><code>initial</code> value</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#rem-unit-px-fallback"><code>rem</code> unit</a> <small class="cssnext-FeaturesList-small">
+                               (<code>px</code> fallback)
+                             </small>
+                           </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#any-link-pseudo-class"><code>:any-link</code> pseudo-class</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#matches-pseudo-class"><code>:matches</code> pseudo-class</a> </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#not-pseudo-class"><code>:not</code> pseudo-class</a> <small class="cssnext-FeaturesList-small">
+                               (to l.3)
+                             </small>
+                           </li>
+                        
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#pseudo-syntax-fallback"><code>::</code>pseudo syntax</a> <small class="cssnext-FeaturesList-small">
+                               (<code>:</code> fallback)
+                             </small>
+                           </li>
+                           <li >
+                             <a target="_blank"href="http://cssnext.io/features/#replace-overflow-wrap"><code>overflow-wrap</code> property</a> <small class="cssnext-FeaturesList-small">
+                               (<code>word-wrap</code> fallback)
+                             </small>
+                           </li>
+                         </ul>
+                 </div>
+                </section>
+                <section>
+                    <h1>preCSS</h1>
+                    <p>Use <span class="bold color">Sass-like markup</span> in your CSS</p>
+                    <ul>
+                        <li>Variables</li>
+                        <li>Conditionals</li>
+                        <li>Loops</li>
+                        <li>Mixins</li>
+                        <li>Extends</li>
+                        <li>Imports</li>
+                        <li>...</li>
+                    </ul><br>
+                     <a class="icon-source" href="https://github.com/jonathantneal/precss" target="_blank"></a>
+                    
+                </section>
+            </section>
+            <!-- nak -->
+            <section>
+                <section>
+                    <h1><span class="text color  bold ">Future </span>CSS</h1>
+                    <a class="icon-source" href="" target="_blank"></a>
+                </section>
+                <section>
+                    <h1><span class=" bold">Custom</span> properties</h1>
                     <a class="icon-source" href="https://www.w3.org/TR/css-variables/" target="_blank"></a>
                 </section>
                 <section>
@@ -428,106 +590,11 @@ grid-template-column:1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr
                     </code></pre>
                 </section>
                 <section>
-                    <h2>Resolving dependency <span class="bold color">Cycles</span></h2>
-                    <p>This example shows a custom property safely using a variable:</p>
-                    <pre><code class="css">
-:root {
-   --main-color: #c06;
-   --accent-background: linear-gradient(to top, var(--main-color), white);
-}
-                       </code></pre>
-                    <p>The <span class="bold ">--accent-background</span> property will <span class="bold color">automatically update</span> when the <span class="bold">--main-color</span> <span class="bold color">property is changed</span>.</p>
-                    <div class="container half">
-                        <pre><code class="css icon-ko">
-:root {
---one: calc(var(--two) + 20px);
---two: calc(var(--one) - 20px);
-}
-                           </code></pre>
-                        <pre><code class="css icon-ok">
- <one><two><three /></two></one>
- one   { --foo: 10px; }
- two   { --bar: calc(var(--foo) + 10px); }
- three { --foo: calc(var(--bar) + 10px); }
-                           </code></pre>
-                    </div>
-                    <a href="https://www.w3.org/TR/css-variables/#cycles" target="_blank" class="icon-source"></a>
-                </section>
-                <section>
-                    <h1><span class="bold color">Cascade</span> on custom properties</h1>
-                    <p>If a custom property is declared multiple times, <span class="bold color">the standard cascade rules</span> help resolve it</p>
-                    <div class="container">
-                        <pre><code class="css">
-    :root { --color: yellow; }
-    div { --color: pink; }
-    #alert { --color: blue; }
-    * { color: var(--color); }
-            </code></pre>
-                        <pre><code class="html">
-    <p>I inherited blue from the root element!</p>
-    <div>I got green set directly on me!</div>
-    <div id='alert'>
-    While I got red set directly on me!
-        <p>I’m red too, because of inheritance!</p>
-    </div>
-                    </code></pre>
-                    </div>
-                    <a target="_blank" class="icon-source" href="http://naknak.me/ariketak/custom_properties-cascade.html"></a>
-                </section>
-                <section>
                     <h1>Can I use?</h1>
                     <iframe width="100%" class="three quarters height" src="http://caniuse.com/#feat=css-variables" frameborder="0"></iframe>
-                    <!-- <a href="https://dev.windows.com/en-us/microsoft-edge/platform/status/cssvariables" target="">MS low priority</a> -->
-                </section>
-                <section>
-                    <h1><span class="bold color">Enable</span> custom properties</h1>
-                    <div class="container small tal">
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/chrome.png" alt="Chrome logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="https://www.google.com/intl/en/chrome/browser/">Chrome</a></h3>
-                                <p class="icon-warning">Enable the flag called <strong class="color">Enable experimental Web Platform features</strong> going to:
-                                    <br><a target="_blank" href="chrome://flags/#enable-experimental-web-platform-features">chrome://flags/#enable-experimental-web-platform-features</a></p>
-                                <p>Supported in next release 49</p>
-                            </div>
-                        </div>
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/firefox.png" alt="Firefox logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="https://mozilla.org/firefox">Firefox</a></h3>
-                                <p class="icon-ok">Supported</p>
-                            </div>
-                        </div>
-                        <div class="relative  media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/internet-explorer.png" alt="Internet Explorer logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">IE</a></h3>
-                                <p class="icon-ko">Not supported</p>
-                                <a href="https://dev.windows.com/en-us/microsoft-edge/platform/status/cssvariables" target="_blank">Roadmap Priority: Low</a>
-                            </div>
-                        </div>
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/opera.png" alt="Opera logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="http://www.opera.com/">Opera</a></h3>
-                                <p class="icon-ko">Not supported</p>
-                            </div>
-                        </div>
-                        <div class="relative media thumbnail">
-                            <img class="black-white alpha media-object" src="http://igalia.github.io/css-grid-layout/img/webkit.png" alt="WebKit logo">
-                            <div class="media-body">
-                                <h3 class="media-heading"><a target="_blank" href="http://nightly.webkit.org/">WebKit</a></h3>
-                                <p class="icon-warning">Supporten in next release 9.3</p>
-                            </div>
-                        </div>
-                    </div>
                 </section>
                 <section>
                     <h1>But we can use the sintaxis <span class="bold color">today</span></h1>
-                </section>
-                <section>
-                    <h1><span class="bold bright">PostCSS</span></h1>
-                    <h2><span class="color">Again</span></h2>
                 </section>
                 <section>
                     <h1>CSS <span class="color bold">extensions</span></h1>
@@ -552,234 +619,44 @@ grid-template-column:1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr 1% 1fr
                 <section>
                     <h1>But this is the <span class="color bold">future</span></h1>
                     <h2>Really?</h2>
+                    <h2><a href="https://github.com/postcss/postcss-custom-selectors" target="_blank" ><span class="icon-github"></span> postcss-custom-selectors</a></h2>
+                </section>
+                <section>
+                    <h1><span class="bold color">@apply</span> rule</h1>
+                    <a href="https://tabatkins.github.io/specs/css-apply-rule/" target="_blank" class="icon-source"></a>
+                </section>
+                <section>
+                    <pre><code>
+:root {
+  --toolbar-theme: {
+    background-color: hsl(120, 70%, 95%);
+    border-radius: 4px;
+    border: 1px solid var(--theme-color late);
+  };
+  --toolbar-title-theme: {
+    color: green;
+  };
+}
 
-                    <h2><a href="https://github.com/postcss/postcss-custom-selectors" target="_blank" class="icon-github">postcss-custom-selectors</a></h2>
+.toolbar {
+  @apply --toolbar-theme;
+}
+.toolbar > .title {
+  @apply --toolbar-title-theme;
+}</code></pre>
+                </section>
+                <section>
+                    <a href="https://www.chromestatus.com/feature/5753701012602880" target="_blank">https://www.chromestatus.com/feature/5753701012602880</a>
                 </section>
             </section>
+            <!-- nak -->
             <section>
                 <section>
-                    <h1><span class="text color huge bold block">3</span>CSS <span class=" bold">modules</span></h1>
-                    <a href="https://github.com/css-modules/css-modules" target="_blank" class="icon-source"></a>
+                    <h1>From <span class="text color  bold ">Sass</span> to PostCSS</h1>
+                   
                 </section>
                 <section>
-                    <h1>The problem</h1>
-                    <h2>The <span class="bold color">global scope</span></h2>
-                </section>
-                <section>
-                    <h1>Workaround</h1>
-                    <p>We’ve worked around the issues of global scope with a series of naming conventions like <span class="bold color"><a target="_blank" class="color" href="http://oocss.org/">OOCSS</a>, <a target="_blank" class="color" href="https://smacss.com/">SMACSS</a>, <a target="_blank" class="color" href="https://en.bem.info/">BEM</a></span> and <span class="bold color"><a target="_blank" class="color" href="https://suitcss.github.io/">SUIT</a></span>, each providing a way for us to avoid naming collisions and emulate sane scoping rules.</p>
-                </section>
-                <section>
-                    <h1>The solution</h1>
-                    <h2>A CSS Module is a CSS file in which <span class="bold color">all class names and animation names are scoped locally</span> by default.</h2>
-                </section>
-                <section>
-                    <h1>Why?</h1>
-                    <h2><span class="bold color">Modular</span> and <span class="bold color">reusable</span> CSS!</h2>
-                    <ul>
-                        <li>No more conflicts.</li>
-                        <li>Explicit dependencies.</li>
-                        <li>No global scope.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>
-            It fits perfectly with <span class="bold color">React</span> & <span class="bold color">Angular</span>
-       </h1>
-                </section>
-                <section>
-                    <p>The .foo <span class="bold color">class</span> does <span class="bold color">not </span>have to be <span class="bold color">unique</span> on the project as <span class="bold color">it is not 
-                the actual class</span> name that will be rendered.</p>
-                    <pre><code class="css">
-/* style.css */
-
-.foo {
-  color: gold;
-  width: 40em;
-  margin: 0 auto;
-}
-</code></pre>
-                    <pre><code class="js"> 
-import styles from './styles.css';
-
-element.innerHTML = `<div class="${styles.base}">
-  CSS Modules are fun.
-</div>`;
-</code></pre>
-                </section>
-                <section>
-                    <h1><span class="bold">._20WEds96_Ee1ra54-24ePy</span></h1>
-                    <P> This will generate something like this:</P>
-                    <pre><code class="html">
-<div class="_20WEds96_Ee1ra54-24ePy">CSS Modules are fun.</div>
-        </code></pre>
-                    <pre><code>
-._20WEds96_Ee1ra54-24ePy {
-  color: gold;
-  width: 40em;
-  margin: 0 auto;
-}
-</code>
-        </pre>
-                    <p class="comment">When using it through webpack with the <span class="bold color">default setup</span></p>
-                </section>
-                <section>
-                    <h1>Make it <span class="bold color">more readable</span></h1>
-                    <p>We can configure the class format in our Webpack config as a parameter to css-loader:</p>
-                    <pre><code class="js">
-loaders: [
-  ...
-  {
-    test: /\.css$/,
-    loader: 'css?localIdentName=[name]__[local]___[hash:base64:5]'
-  }
-]
-        </code></pre>
-                    <p>.foo class identifier from earlier would compile into this:</p>
-                    <pre><code class="css">
-.MyComponent__foo___1rJwx { … }
-</code></pre>
-                </section>
-                <section>
-                    <h1>Composition</h1>
-                    <h2><span  class="bold color">composes</span>:  ;</h2>
-                    <p>It's possible to <span class="bold color">compose selectors</span>.</p>
-                    <pre><code class="css">
-/** theme.css **/
-
-.background {
-    background: rgba(0,0,0,.5);
-}
-
-/** MyComponent.css **/
-
-.root {
-  composes: background from "./theme.css"; /*or composes: background;*/
-  margin: 10px;
-}
-        </code></pre>
-                    <pre><code>
-div class="MyComponent__root _theme__background">
-        </code></pre>
-                </section>
-                <section>
-                    <h1>Setting up</h1>
-                    <a target="_blank" href="https://github.com/css-modules/css-modules/blob/master/docs/get-started.md#setting-up-css-modules" class="icon-source"></a>
-                    <div class="container smaller half">
-                        <div>
-                            <h2>Webpack</h2>
-                            <p>The <a target="_blank" class="color" href="https://github.com/webpack/css-loader">css-loader</a> has CSS Modules built-in. Simply activate it by using the ?modules flag.</p>
-                            <p>
-                                <a target="_blank" class="color" href="https://github.com/css-modules/webpack-demo">css-modules/webpack-demo</a>
-                            </p>
-                        </div>
-                        <div>
-                            <h2>Browserify</h2>
-                            <p> The plugin <a target="_blank" class="color" href="https://github.com/css-modules/css-modulesify">css-modulesify</a> gives your Browserify build the ability to require a CSS file and compile it as a CSS Module. </p>
-                            <p>
-                                <a target="_blank" class="color" href="https://github.com/css-modules/browserify-demo">css-modules/browserify-demo</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="container half smaller">
-                        <div>
-                            <h2>JSPM</h2>
-                            <p> The experimental <a target="_blank" class="color" href="https://github.com/geelen/jspm-loader-css-modules">JSPM loader</a> jspm-loader-css-modules adds CSS Modules support to SystemJS & JSPM</p>
-                            <p><a target="_blank" class="color" href="https://github.com/css-modules/jspm-demo">css-modules/jspm-demo</a></p>
-                        </div>
-                        <div>
-                            <h2>NodeJS</h2>
-                            <p> The <a target="_blank" class="color" href="https://github.com/css-modules/css-modules-require-hook">css-modules-require-hook</a> works similarly to the Browserify plugin, but patches NodeJS's require to interpret CSS files as CSS Modules. This gives complete flexibility in how the output is handled, ideal for server-side rendering.</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h1>or <span class="bold">postCSS</span>...</h1>
-                </section>
-                <section>
-                    <h1>Doc</h1>
-                    <ul>
-                        <li><a target="_blank" href="https://github.com/css-modules/css-modules">https://github.com/css-modules/css-modules</a></li>
-                        <li><a target="_blank" href="http://www.sitepoint.com/understanding-css-modules-methodology/">http://www.sitepoint.com/understanding-css-modules-methodology/</a></li>
-                        <li><a target="_blank" href="http://x-team.com/2015/08/css-modules-a-new-way-to-css/">http://x-team.com/2015/08/css-modules-a-new-way-to-css/</a></li>
-                    </ul>
-                </section>
-            </section>
-            <section>
-                <section>
-                    <h1><span class="text color huge bold block">4</span> <span class="bold">PostCSS</span> <br> </h1>
-                    <h2>Is Sass dead?</h2>
-                    <a class="icon-source" href="http://postcss.org/" target="_blank"></a>
-                </section>
-                <section>
-                    <h1>A <span class="color bold">tool for transforming CSS</span> with JavaScript</h1></section>
-                <section>
-                    <h1>Based on <span class="bold color">plugins</span></h1>
-                    <h2>Build you own environment</h2>
-                    <a href="http://postcss.parts/" class="icon-source" target="_blank"></a>
-                    <p>Currently, PostCSS has <span class="bold color">more than 200 plugins</span></p>
-                </section>
-                <section>
-                    <h1>Great <span class="bold color">Plugins</span></h1>
-                    <div> <img src="http://postcss.org/_/web_modules/InANutshell/autoprefixer.svg" alt="">
-                        <h3>Autoprefixer</h3>
-                        <p>Add vendor prefixes to CSS rules using values from Can I Use.</p>
-                        <a href="https://github.com/postcss/autoprefixer" target="_blank" class="icon-source"></a>
-                        <pre><code class="css">
-<!-- Input -->
-:fullscreen {
-}
-<!-- output -->
-:-webkit-:full-screen {
-}
-:-moz-:full-screen {
-}
-:full-screen {
-}
-                            </code></pre>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <img src="http://postcss.org/_/web_modules/InANutshell/cssnext.svg" alt="">
-                        <h3>cssnext</h3>
-                        <p>Use the latest CSS syntax today with cssnext</p>
-                        <a href="http://cssnext.io/" target="_blank" class="icon-source"></a>
-                        <pre><code class="css">
-<!-- Input -->
-:root { 
-    --red: #d33;
-}
-a { 
-    &:hover {
-        color: color(var(--red) a(54%));
-    }
-}
-<!-- Output -->
-a:hover { 
-    color: #dd3333;
-    color: rgba(221, 51, 51, 0.54);
-}
-                            </code></pre>
-                    </div>
-                </section>
-                <section>
-                    <div>
-                        <img class="invert" src="http://postcss.org/_/web_modules/InANutshell/css-modules.svg" alt="">
-                        <h3>CSS Modules</h3>
-                        <p>Work CSS like independent components</p>
-                        <a href="https://github.com/css-modules/css-modules" target="_blank" class="icon-source"></a>
-                        <pre><code class="css">
-<!-- input -->                                
-.name {
-    color: gray;
-}
-<!-- output -->
-.Logo__name__SVK0g {
-    color: gray;
-}
-                            </code></pre>
-                    </div>
+                    <h1>Is Sass dead?</h1>
                 </section>
                 <section>
                     <h1>From <span class="bold color">Sass</span> to <span class="bold color">PostCSS</span></h1>
@@ -791,36 +668,73 @@ a:hover {
                     <h1 class="bold">Sass <span class="pound motion icon-heart"></span> postCSS</h1>
                     <h2>They can live <span class="bold color block">together</span></h2>
                 </section>
+                <section>
+                    <h1>But the truth is that <span class="color bold">we don´t need</span><br> Sass anymore</h1>
+                </section>
+            </section>
+          
+            <!-- nak -->
+            <section>
+                <section>
+                    <h1><span class="color bold">Wordpress</span><br> with PostCSS</h1>
+                </section>
+                <section>
+                    <h1>Where <br><span class="color bold">there is a CSS</span>,<br> is PostCSS</h1>
+                </section>
+          
+                <section>
+                    <h1>My <span class="color bold">first <span class="black bold">postCSS</span> project</span> </h1>
+                    <h2>on a Wordpress</h2>
+                    
+                    <br>
+                    <img src="assets/educaland.png" alt="Educa.land"><br>
+                    <a class="icon-source" href="http://educa.land" target="_blank"></a>
+                </section>
+                <section>
+                    <h1>Work in <span class="color bold">context</span></h1>
+                </section>
+                <section>
+                    <h1>Theme <span class="color bold">arquitecture</span></h1>
+                    <img height="550px" src="assets/wp-files.jpg" alt="">
+                </section>
+                <section>
+                    <h1>Used <span class="color bold">plugins</span></h1>
+                    <img src="assets/postcss-plugins.jpg" alt="">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Need <span class="bold color">more</span> arguments?</h1>
+                </section>
+                <section>
+                    <h1>Lea is thinking of <span class="color bold">switching</span></h1>
+                    <img src="assets/lea.jpg" class="circle vam" alt="">
+                    <img src="assets/lea.png" class="vam" alt="">
+                    <br>
+                    <a class="icon-source " href="https://twitter.com/LeaVerou/status/739594371314683905" target="_blank"></a>
+                </section>
             </section>
             <section>
                 <section>
                     <h1>What did I <span class="bold color">use</span>?</h1>
                 </section>
                 <section>
-             
-                        <a href="https://github.com/nabaroa/theGoldRush" class="huge icon-github  no-text-decoration" target="_blank"></a>
-                
-                    <div >
+                    <a href="https://github.com/nabaroa/postcss-treasure-map" class="huge icon-github  no-text-decoration" target="_blank"></a>
+                    <div>
                         <div><a target="_blank" href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></div>
                         <div><a target="_blank" href="http://postcss.org/">postCSS</a></div>
                         <div><a target="_blank" href="http://gulpjs.com/">gulp</a></div>
                     </div>
-                    <h2>Attribution</h2>
-
-
                     <div class="container">
-                       
-                        <a class=" no-text-decoration" href=" http://blogs.igalia.com/mrego/2016/02/01/deep-dive-into-grid-layout-placement" target="_blank">
-                            <figure>
-                                <img src="assets/example-grid-lines-item.svg" alt="">
-                                <figcaption>SVG original by igalia.com</figcaption>
-                            </figure>
-                        </a>
                     </div>
                 </section>
                 <section>
-                    <h1>Eskerrik asko!</h1>
-                    <h2><span class="bold color">Galderarik?</span></h2>
+                    <h1 class="bold color"> Eskerrik asko</h1>
+                    <h2>;)</h2>
+                </section>
+                <section data-background="assets/interrogation.jpg" data-background-position="top left">
+                    <!-- <h1>Eskerrik asko!</h1> -->
+                    <h2> <span class="bold background color">&nbsp;Interrogation mode&nbsp;</h1>  <!-- <h2><a class="color bold white " href="https://twitter.com/nabaroa"> &nbsp;@nabaroa &nbsp;</a></h2> -->
                 </section>
             </section>
         </div>
@@ -869,7 +783,7 @@ a:hover {
         }]
     });
     </script>
-        <script type="text/javascript">
+    <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-32740256-1']);
     _gaq.push(['_trackPageview']);

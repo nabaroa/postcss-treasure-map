@@ -1,8 +1,8 @@
 {
-  "name": "IveSeenThings",
+  "name": "postcss-treasure-map",
   "version": "1.0.0",
-  "description": "Slides on CSS new features (using reveal.js)",
-  "homepage": "http://naknakme/IveSeenThings",
+  "description": "Slides on postCSS",
+  "homepage": "http://naknakme/postCSS",
   "author": {
     "name": "Naiara Abaroa",
     "email": "naiaraabaroa@gmail.com",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nabaroa/IveSeenThings"
+    "url": "git://github.com/nabaroa/postcss-treasure-map"
   },
   "devDependencies": { 
     "browser-sync": "",

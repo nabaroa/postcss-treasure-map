@@ -67,6 +67,7 @@
 
 .icon-cross:before {
   content: "\e117";
+  font-family: 'icon-slides' !important;
 }
 
 .icon-menu:before {

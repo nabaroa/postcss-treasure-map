@@ -2004,6 +2004,7 @@ html:-webkit-full-screen-ancestor, html:-moz-full-screen-ancestor {
 }
 .icon-cross:before {
     content: "\e117";
+    font-family: 'icon-slides' !important;
 }
 .icon-menu:before {
     content: "\e120";
@@ -2195,7 +2196,7 @@ body {
 }
 ::selection {
     color: #fff;
-    background: #0abda3;
+    background: #da223a;
     text-shadow: none;
 }
 .reveal .slides > section {
@@ -2391,32 +2392,32 @@ body {
 }
 .reveal a:hover img {
     background: rgba(255, 255, 255, 0.2);
-    border-color: #0abda3;
+    border-color: #da223a;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
 .reveal .controls .navigate-left {
-    border-right-color: #0abda3;
+    border-right-color: #da223a;
 }
 .reveal .controls .navigate-left.enabled {
-    border-right-color: #0abda3;
+    border-right-color: #da223a;
 }
 .reveal .controls .navigate-right {
-    border-left-color: #0abda3;
+    border-left-color: #da223a;
 }
 .reveal .controls .navigate-right.enabled {
-    border-left-color: #0abda3;
+    border-left-color: #da223a;
 }
 .reveal .controls .navigate-up {
-    border-bottom-color: #0abda3;
+    border-bottom-color: #da223a;
 }
 .reveal .controls .navigate-up.enabled {
-    border-bottom-color: #0abda3;
+    border-bottom-color: #da223a;
 }
 .reveal .controls .navigate-down {
-    border-top-color: #0abda3;
+    border-top-color: #da223a;
 }
 .reveal .controls .navigate-down.enabled {
-    border-top-color: #0abda3;
+    border-top-color: #da223a;
 }
 .reveal .controls .navigate-left.enabled:hover {
     border-right-color: #f3d7ac;
@@ -2434,7 +2435,7 @@ body {
     background: rgba(0, 0, 0, 0.2);
 }
 .reveal .progress span {
-    background: #0abda3;
+    background: #da223a;
     -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
     -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
     transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -2462,21 +2463,24 @@ body {
  * Color
  *---------------------------------------------- */
 body {
-    background: #f3f3f3;
-    color: #111111;
-    background: radial-gradient(white, #999999);
+    background: #111111;
+    color: #444444;
+    background: radial-gradient(#ffffff, #cccccc);
 }
 a {
-    color: #111111;
+    color: #444444;
 }
 .color {
-    color: #0abda3;
+    color: #da223a;
 }
 .comment {
     color: #666666;
 }
 .background {
     background: black;
+}
+.white {
+    color: #ffffff !important;
 }
 /*---------------------------------------------
  * Text
@@ -2607,7 +2611,7 @@ a.no-text-decoration:hover {
  * Elements
  *---------------------------------------------- */
 dt {
-    color: #0abda3;
+    color: #da223a;
     float: left;
     margin-right: 10px !important;
 }
@@ -2620,12 +2624,16 @@ dt {
 .tac {
     text-align: center;
 }
+.vam {
+    vertical-align: middle !important;
+}
 /*---------------------------------------------
  * Status
  *---------------------------------------------- */
 .icon-ko {}
 .icon-ko:before {
     content: "\e117";
+    font-family: 'icon-slides' !important;
     background: red;
     position: absolute;
     right: 0;
@@ -2640,6 +2648,7 @@ dt {
 .icon-ok {}
 .icon-ok:before {
     background: green;
+    font-family: 'icon-slides' !important;
     border-radius: 500rem;
     position: absolute;
     right: 0;
@@ -2667,6 +2676,7 @@ dt {
 .label {
     background: red;
     position: fixed;
+    color: #ffffff !important;
     top: 0;
     left: -200px;
     width: 400px;
@@ -2716,7 +2726,7 @@ dt {
 .icon-source {
     text-decoration: none;
     position: relative;
-    color: #0abda3;
+    color: #da223a;
     border-radius: 500rem;
     display: inline-block;
 }
@@ -2724,7 +2734,7 @@ dt {
     padding: 10px;
 }
 .icon-source:hover {
-    background: #0abda3;
+    background: #da223a;
     transition: .5s;
     color: black !important;
 }
@@ -2741,44 +2751,6 @@ dt {
     font-family: lato-light, sans-serif;
     font-size: .8em;
 }
-.gototop {
-    position: relative;
-    text-decoration: none;
-}
-.gototop:hover {}
-.gototop:hover:after {
-    display: block;
-}
-.gototop:after {
-    content: "Go to top";
-    position: absolute;
-    top: 0;
-    left: 50px;
-    display: none;
-    font-family: $light;
-    font-size: .8em;
-    white-space: nowrap;
-    width: 100%;
-}
-.gotomenu {
-    text-decoration: none;
-    position: relative;
-}
-.gotomenu:hover {}
-.gotomenu:hover:after {
-    display: block;
-}
-.gotomenu:after {
-    content: "Go to module menu";
-    position: absolute;
-    top: 0;
-    left: 50px;
-    display: none;
-    font-family: $light;
-    font-size: .8em;
-    white-space: nowrap;
-    width: 100%;
-}
 /*---------------------------------------------
 * filters
 *---------------------------------------------- */
@@ -2789,11 +2761,35 @@ dt {
     filter: gray;
     filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
 }
+.backdrop-black-white {
+    -moz-backdrop-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    -o-backdrop-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-backdrop-filter: grayscale(100%);
+    backdrop-filter: gray;
+    backdrop-filter: grayscale(100%);
+}
+.no-filter {
+    -moz-filter: none;
+    -o-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    filter: none;
+}
+.filter-glass {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
 .invert {
     -webkit-filter: invert(100%);
 }
 .alpha {
     opacity: .5;
+}
+.text-shadow {
+    text-shadow: 5px 5px 10px #111111 !important;
 }
 /*---------------------------------------------
 * Animation
@@ -2816,13 +2812,13 @@ dt {
 }
 @keyframes change-color {
     0%, 100% {
-        color: #223143;
+        color: #08b4cd;
     }
     33% {
-        color: #0abda3;
+        color: #da223a;
     }
     66% {
-        color: #24c3c9;
+        color: #f2b806;
     }
 }
 /*---------------------------------------------
@@ -2836,8 +2832,8 @@ dt {
     border-bottom: 1px solid currentColor;
 }
 .reveal a:hover {
-    color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid #0abda3;
+    color: #da223a;
+    border-bottom: 1px solid #da223a;
 }
 .reveal a[class^=icon] {
     border: 0;
@@ -2845,29 +2841,29 @@ dt {
 .reveal h1 {
     line-height: 1;
 }
-.reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal dl {
-    color: #111111;
+.reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal dl, .reveal li {
+    color: #444444;
 }
 .reveal .controls .navigate-left {
-    border-right-color: #0abda3;
+    border-right-color: #da223a;
 }
 .reveal .controls .navigate-left.fragmented {
     opacity: 0.3;
 }
 .reveal .controls .navigate-right {
-    border-left-color: #0abda3;
+    border-left-color: #da223a;
 }
 .reveal .controls .navigate-right.fragmented {
     opacity: 0.3;
 }
 .reveal .controls .navigate-up {
-    border-bottom-color: #0abda3;
+    border-bottom-color: #da223a;
 }
 .reveal .controls .navigate-up.fragmented {
     opacity: 0.3;
 }
 .reveal .controls .navigate-down {
-    border-top-color: #0abda3;
+    border-top-color: #da223a;
 }
 .reveal section img {
     background: none;
@@ -2883,7 +2879,10 @@ dt {
     font-size: .70em;
 }
 .reveal code, .reveal pre {
-    font-family: code;
+    font-family: code !important;
+}
+.reveal blockquote {
+    color: #111111;
 }
 /*---------------------------------------------
 * Expecific for Zenburn library
@@ -2892,23 +2891,26 @@ dt {
     background: none !important;
 }
 .css .hljs-attribute {
-    color: #0abda3;
+    color: #da223a;
 }
 .css .hljs-rule .hljs-number {
-    color: #24c3c9;
+    color: #f2b806;
 }
 .css .hljs-rule .hljs-value {
     color: #f76bd1;
 }
 .css .hljs-class {
-    color: #223143;
+    color: #08b4cd;
 }
 .hljs-string {
-    color: #24c3c9;
+    color: #f2b806;
 }
 .hljs-subst {
-    color: #0abda3;
+    color: #da223a;
 }
 .html .hljs-value {
-    color: #0abda3;
+    color: #da223a;
+}
+.hljs-comment {
+    color: #f2b806;
 }
